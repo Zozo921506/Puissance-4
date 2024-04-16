@@ -1,0 +1,57 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    color: darkblue;
+    text-align: center;
+    background-image: linear-gradient(to left, red , yellow);
+}
+
+#game
+{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+td
+{
+    border: 3px solid darkblue;
+    border-radius: 50%;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#table
+{
+    background-color: blue;
+}
+
+.player
+{
+    text-decoration: underline;
+}
+
+@keyframes falling
+{
+    from 
+    {
+        transform: translateY(-100%);
+    }
+    to 
+    {
+        transform: translateY(0);
+    }
+}
+
+.animation
+{
+    animation: falling 1s ease forwards;
+    top: -100%;
+}
